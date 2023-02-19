@@ -7,7 +7,7 @@ plugins {
 group = 'com.ksu6623'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
-
+apply plugin:'base'
 repositories {
 	mavenCentral()
 }
