@@ -16,6 +16,14 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
+jar {
+  manifest {
+    attributes(
+      'Main-Class': 'ksu6623.ApiApplication'
+    )
+  }
+}
+
 group = 'com.ksu6623'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
@@ -36,12 +44,4 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
-}
-
-jar {
-  manifest {
-    attributes(
-      'Main-Class': 'ksu6623.ApiApplication'
-    )
-  }
 }
